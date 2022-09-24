@@ -14,6 +14,9 @@ public class TipCalculator {
         double gratuity = gratuityRate * subTotal ;
         double total = gratuity + subTotal;
 
-        System.out.printf("the gratuity is $%.2f and the total is $%.2f  ", gratuity, total);
+        String string_gratuity = String.format("%.2f", gratuity);
+        String string_total = String.format("%.2f", total);
+//        System.out.printf("the gratuity is $%.2f and the total is $%.2f  ", gratuity, total);
+        System.out.println("the gratuity is $" + string_gratuity + " and the total is $" + string_total);
     }
 }
